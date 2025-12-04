@@ -3,12 +3,13 @@
 This interactive Bash script simplifies the maintenance of Docker Compose services hosted in LXC containers on Proxmox VE.  
 Instead of manually connecting to each container to update your stacks, this script scans your entire infrastructure, detects active projects, and allows you to bulk update them via a simple graphical interface.
 
-## ** Installation & Quick Usage**
+## **Installation & Quick Usage**
 
 Simply run this command from the shell of your Proxmox host (the "Node", not inside an LXC):  
-bash \-c "$(curl \-fsSL \[https://raw.githubusercontent.com/ggodefroid/proxmox-lxc-docker-updater/refs/heads/main/docker-compose-lxc-updater.sh\](https://raw.githubusercontent.com/ggodefroid/proxmox-lxc-docker-updater/refs/heads/main/docker-compose-lxc-updater.sh))"
 
-## ** Features**
+```sh bash -c "$(curl -fsSL https://raw.githubusercontent.com/ggodefroid/proxmox-lxc-docker-updater/refs/heads/main/docker-compose-lxc-updater.sh)"```
+
+## **Features**
 
 * **Automatic Scanning**: Iterates through all running LXC containers on your Proxmox node.  
 * **Native Detection**: Uses the native docker compose ls API to accurately identify active stacks (avoiding false positives from file scans).  
