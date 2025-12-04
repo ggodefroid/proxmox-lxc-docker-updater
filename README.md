@@ -7,7 +7,9 @@ Instead of manually connecting to each container to update your stacks, this scr
 
 Simply run this command from the shell of your Proxmox host (the "Node", not inside an LXC):  
 
-```sh bash -c "$(curl -fsSL https://raw.githubusercontent.com/ggodefroid/proxmox-lxc-docker-updater/refs/heads/main/docker-compose-lxc-updater.sh)"```
+```sh
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ggodefroid/proxmox-lxc-docker-updater/refs/heads/main/docker-compose-lxc-updater.sh)"
+```
 
 ## **Features**
 
